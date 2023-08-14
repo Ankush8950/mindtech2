@@ -14,14 +14,14 @@ const Navbar = () => {
             <li tabIndex={0} className="">
               <details>
                 <summary className="text-white hover:text-white">Industries</summary>
-                {/* <ul className="p-2">
+                <ul className="p-2 w-[200px]">
                   <li>
                     <a>Submenu 1</a>
                   </li>
                   <li>
                     <a>Submenu 2</a>
                   </li>
-                </ul> */}
+                </ul>
               </details>
             </li>
             <li>
