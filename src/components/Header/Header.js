@@ -2,7 +2,7 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <div className='w-full h-full mt-2' style={{backgroundImage: 'url(https://www.mindteck.com/assets/sliders/63366092_medical-devices-dts.jpg)',width: '100%',height: '100%'}}>
+    <div className='w-full h-full pt-2' style={{backgroundImage: 'url(https://www.mindteck.com/assets/sliders/63366092_medical-devices-dts.jpg)',width: '100%',height: '100%'}}>
         {/* <img src="" alt="" /> */}
         <div className='flex flex-col items-center justify-center w-full h-screen'>
             <h1 className='font-bold text-4xl text-white'>CAREERS</h1>

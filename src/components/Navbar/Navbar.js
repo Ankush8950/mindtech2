@@ -2,18 +2,18 @@ import React from "react";
 
 const Navbar = () => {
   return (
-      <div className="navbar bg-black pl-10 pr-10 font-roboto">
+      <div className="navbar bg-[#dadada] pl-10 pr-10 font-roboto">
         <div className="navbar-start">
-          <img src="https://www.mindteck.com/assets/images/logo.jpg" alt="" />
+          <img src="https://www.mindteck.com/assets/images/logo.jpg" className="rounded" alt="" />
         </div>
         <div className="navbar-end hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a className="text-white hover:text-white">About Us</a>
+              <a className="text-[#04789D] hover:text-[#04789D]">About Us</a>
             </li>
             <li tabIndex={0} className="">
               <details>
-                <summary className="text-white hover:text-white">Industries</summary>
+                <summary className="text-[#04789D] hover:text-[#04789D]">Industries</summary>
                 <ul className="p-2 w-[200px]">
                   <li>
                     <a>Submenu 1</a>
@@ -25,16 +25,16 @@ const Navbar = () => {
               </details>
             </li>
             <li>
-              <a className="text-white hover:text-white">Technology</a>
+              <a className="text-[#04789D] hover:text-[#04789D]">Technology</a>
             </li>
             <li>
-              <a className="text-white hover:text-white">Services</a>
+              <a className="text-[#04789D] hover:text-[#04789D]">Services</a>
             </li>
             <li>
-              <a className="text-white hover:text-white">Careers</a>
+              <a className="text-[#04789D] hover:text-[#04789D]">Careers</a>
             </li>
             <li>
-              <a className="text-white hover:text-white">Contact Us</a>
+              <a className="text-[#04789D] hover:text-[#04789D]">Contact Us</a>
             </li>
           </ul>
         </div>
