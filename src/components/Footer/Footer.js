@@ -5,6 +5,8 @@ import { BiLogoLinkedin } from "react-icons/bi";
 import {FaMobileAlt} from "react-icons/fa"
 import {AiOutlineMail} from "react-icons/ai"
 import {GoLocation} from "react-icons/go"
+import Logo from "../Image/logo.jpg"
+
 
 const Footer = () => {
   return (
@@ -12,7 +14,7 @@ const Footer = () => {
       <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0 pl-10 space-y-3">
-            <img src="./logo.jpg" alt="" />
+            <img className="ml-[-30px] mt-[-30px]" src={Logo} alt="" />
             <h1 className="flex items-center text-[#18477E]"> <span className="mr-2"><GoLocation size={20} /></span> Address</h1>
             <div className="flex items-center text-[#18477E]">
             <p className="mr-2"><AiOutlineMail size={20} /></p>

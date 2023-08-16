@@ -1,10 +1,11 @@
 import React from "react";
+import Logo from "../Image/logo.jpg"
 
 const Navbar = () => {
   return (
-      <div className="navbar bg-[#dadada] pl-10 pr-10 font-roboto">
+      <div className="navbar bg-white pl-10 pr-10 font-roboto">
         <div className="navbar-start">
-          <img src="./logo.jpg" className="rounded" alt="" />
+          <img  src={Logo} className="rounded w-[200px]" alt="" />
         </div>
         <div className="navbar-end hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
