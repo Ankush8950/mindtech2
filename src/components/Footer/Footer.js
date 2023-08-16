@@ -12,7 +12,7 @@ const Footer = () => {
       <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0 pl-10 space-y-3">
-            <img src="https://www.mindteck.com/assets/images/logo.jpg" alt="" />
+            <img src="./logo.jpg" alt="" />
             <h1 className="flex items-center text-[#18477E]"> <span className="mr-2"><GoLocation size={20} /></span> Address</h1>
             <div className="flex items-center text-[#18477E]">
             <p className="mr-2"><AiOutlineMail size={20} /></p>

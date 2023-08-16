@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
       <div className="navbar bg-[#dadada] pl-10 pr-10 font-roboto">
         <div className="navbar-start">
-          <img src="https://www.mindteck.com/assets/images/logo.jpg" className="rounded" alt="" />
+          <img src="./logo.jpg" className="rounded" alt="" />
         </div>
         <div className="navbar-end hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
