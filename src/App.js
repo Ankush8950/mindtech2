@@ -4,6 +4,7 @@ import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
 import TopNavbar from './components/TopNavbar/TopNavbar'
 import JoinUs from './components/JoinUsSection/JoinUs'
+import Form from "./components/Form/Form"
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Navbar />
       <Header />
       <JoinUs />
+      <Form />
       <Footer />
     </div>
   )

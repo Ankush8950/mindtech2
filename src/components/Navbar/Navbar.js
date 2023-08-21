@@ -25,9 +25,22 @@ const Navbar = () => {
                 </ul>
               </details>
             </li>
-            <li>
-              <a className="text-[#04789D] hover:text-[#04789D]">Technology</a>
+            <li tabIndex={0} className="">
+              <details>
+                <summary className="text-[#04789D] hover:text-[#04789D]">Technology</summary>
+                <ul className="p-2 w-[200px]">
+                  <li>
+                    <a>Submenu 1</a>
+                  </li>
+                  <li>
+                    <a>Submenu 2</a>
+                  </li>
+                </ul>
+              </details>
             </li>
+            {/* <li>
+              <a className="text-[#04789D] hover:text-[#04789D]">Technology</a>
+            </li> */}
             <li>
               <a className="text-[#04789D] hover:text-[#04789D]">Services</a>
             </li>
