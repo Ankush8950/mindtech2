@@ -1,14 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from "../Image/logo.jpg"
+import {RiMenuFill} from "react-icons/ri"
+import ToggleMenu from "../ToggleMenu/ToggleMenu"
+import {AiOutlineClose} from "react-icons/ai"
 
 const Navbar = () => {
+  const [ToggleMenus,setToggleMenu] = useState(false)
   return (
-      <div className="navbar bg-white pl-10 pr-10 font-roboto">
-        <div className="navbar-start">
+      <div className="navbar bg-white pl-10 pr-10 font-roboto w-full flex items-center justify-between">
+        <div className="">
           <img  src={Logo} className="rounded w-[200px]" alt="" />
         </div>
-        <div className="navbar-end hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+        <div className="hidden lg:flex">
+          <ul className="menu menu-horizontal px-1 w-full">
             <li>
               <a className="text-[#04789D] hover:text-[#04789D]">About Us</a>
             </li>
@@ -38,9 +42,6 @@ const Navbar = () => {
                 </ul>
               </details>
             </li>
-            {/* <li>
-              <a className="text-[#04789D] hover:text-[#04789D]">Technology</a>
-            </li> */}
             <li>
               <a className="text-[#04789D] hover:text-[#04789D]">Services</a>
             </li>
@@ -52,9 +53,14 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        {/* <div className="navbar-end">
-          <a className="btn">Button</a>
-        </div> */}
+       <div className="flex  lg:hidden" onClick={()=>setToggleMenu(!ToggleMenus)}>
+        {
+          ToggleMenus ? <AiOutlineClose size={40}/> : <RiMenuFill size={40}/>
+        }
+       </div>
+       {
+        ToggleMenus ? <ToggleMenu /> : ""
+       }
       </div>
   );
 };
