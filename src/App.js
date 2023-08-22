@@ -5,7 +5,6 @@ import Header from './components/Header/Header'
 import TopNavbar from './components/TopNavbar/TopNavbar'
 import IndustriesSection from './components/IndustriesSection/IndustriesSection'
 import JoinUs from './components/JoinUsSection/JoinUs'
-import Form from "./components/Form/Form"
 
 const App = () => {
   return (
@@ -15,7 +14,6 @@ const App = () => {
       <Header />
       <IndustriesSection />
       <JoinUs />
-      <Form />
       <Footer />
     </div>
   )
