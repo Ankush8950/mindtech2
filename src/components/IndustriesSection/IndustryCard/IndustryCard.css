@@ -1,0 +1,23 @@
+.IndustryCard_container{
+    height: 32rem;
+    width: 35rem;
+    margin: 1rem;
+}
+.IndustryCard_image{
+    height: 24rem;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.IndustryCard_para{
+    font-size: 18px;
+    color: white;
+    padding-left: 10px;
+    padding-right:5px;
+}
+
+.IndustryCard_footer{
+    height: 25%;
+    width: 100%;
+}

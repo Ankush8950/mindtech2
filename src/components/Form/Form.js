@@ -3,7 +3,7 @@ import React from "react";
 const Form = () => {
   return (
     <>
-      <div className="w-4/12 bg-blue flex items-center justify-center p-3">
+      <div className="w-4/12 bg-blue flex items-center justify-center p-3 hidden">
         <form className="w-full">
           <div class="mb-1">
             <label

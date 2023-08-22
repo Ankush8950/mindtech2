@@ -3,6 +3,7 @@ import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
 import TopNavbar from './components/TopNavbar/TopNavbar'
+import IndustriesSection from './components/IndustriesSection/IndustriesSection'
 import JoinUs from './components/JoinUsSection/JoinUs'
 import Form from "./components/Form/Form"
 
@@ -12,6 +13,7 @@ const App = () => {
       <TopNavbar />
       <Navbar />
       <Header />
+      <IndustriesSection />
       <JoinUs />
       <Form />
       <Footer />
