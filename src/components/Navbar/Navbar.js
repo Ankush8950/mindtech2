@@ -3,15 +3,15 @@ import Logo from "../Image/logo.jpg";
 import { RiMenuFill } from "react-icons/ri";
 import ToggleMenu from "../ToggleMenu/ToggleMenu";
 import { AiOutlineClose } from "react-icons/ai";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [ToggleMenus, setToggleMenu] = useState(false);
   return (
     <div className="navbar shadow bg-white pl-10 pr-10 font-roboto w-full flex items-center justify-between">
-      <div className="">
+      <Link to="/" className="cursor-pointer">
         <img src={Logo} className="rounded w-[200px]" alt="" />
-      </div>
+      </Link>
       <div className="hidden lg:flex">
         <ul className="menu menu-horizontal px-1 w-full">
           <li>
@@ -72,7 +72,7 @@ const Navbar = () => {
       >
         {ToggleMenus ? <AiOutlineClose size={40} /> : <RiMenuFill size={40} />}
       </div>
-      {ToggleMenus ? <ToggleMenu /> : ""}
+      {ToggleMenus ? <ToggleMenu setToggleMenu={setToggleMenu} /> : ""}
     </div>
   );
 };

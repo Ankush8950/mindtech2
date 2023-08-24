@@ -8,6 +8,7 @@ import Contact from "./components/Contact/Contact"
 import About from "./components/About/About.js"
 import Services from "./components/Services/Services.js"
 import Careers from "./components/Careers/Careers.js"
+import ScrollToTop from './components/ScrollToTop'
 
 
 
@@ -16,6 +17,7 @@ const App = () => {
     <div>
       <TopNavbar />
       <Navbar />
+      <ScrollToTop>
       <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/about-us' element={<About />}/>
@@ -24,6 +26,7 @@ const App = () => {
         <Route path='/careers' element={<Careers />}/>
         <Route path='/contact' element={<Contact />}/>
       </Routes>
+      </ScrollToTop>
       <Footer />
     </div>
   )
