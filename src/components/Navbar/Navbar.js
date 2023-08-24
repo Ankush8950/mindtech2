@@ -3,20 +3,21 @@ import Logo from "../Image/logo.jpg";
 import { RiMenuFill } from "react-icons/ri";
 import ToggleMenu from "../ToggleMenu/ToggleMenu";
 import { AiOutlineClose } from "react-icons/ai";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [ToggleMenus, setToggleMenu] = useState(false);
   return (
-    <div className="navbar bg-white pl-10 pr-10 font-roboto w-full flex items-center justify-between">
+    <div className="navbar shadow bg-white pl-10 pr-10 font-roboto w-full flex items-center justify-between">
       <div className="">
         <img src={Logo} className="rounded w-[200px]" alt="" />
       </div>
       <div className="hidden lg:flex">
         <ul className="menu menu-horizontal px-1 w-full">
           <li>
-            <a className="text-[#04789D] hover:text-[#04789D]">About Us</a>
+            <NavLink to="/about-us" className="text-[#04789D] hover:text-[#04789D]">About Us</NavLink>
           </li>
-            <li className="dropdown dropdown-hover">
+            {/* <li className="dropdown dropdown-hover">
               <label
                 tabIndex={0}
                 className="text-[#04789D] hover:text-[#04789D]"
@@ -25,16 +26,16 @@ const Navbar = () => {
               </label>
               <ul
                 tabIndex={0}
-                className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+                className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded w-52"
               >
                 <li>
                   <a>Item 1</a>
                 </li>
-                <li>
+                <li className="">
                   <a>Item 2</a>
                 </li>
               </ul>
-            </li>
+            </li> */}
              <li className="dropdown dropdown-hover">
               <label
                 tabIndex={0}
@@ -43,7 +44,7 @@ const Navbar = () => {
               </label>
               <ul
                 tabIndex={0}
-                className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+                className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded w-52"
               >
                 <li>
                   <a>Internet of Things</a>
@@ -55,13 +56,13 @@ const Navbar = () => {
             </li>
          
           <li>
-            <a className="text-[#04789D] hover:text-[#04789D]">Services</a>
+            <NavLink to="/services" className="text-[#04789D] hover:text-[#04789D]">Services</NavLink>
           </li>
           <li>
-            <a className="text-[#04789D] hover:text-[#04789D]">Careers</a>
+            <NavLink to="/careers" className="text-[#04789D] hover:text-[#04789D]">Careers</NavLink>
           </li>
           <li>
-            <a className="text-[#04789D] hover:text-[#04789D]">Contact Us</a>
+            <NavLink to="/contact" className="text-[#04789D] hover:text-[#04789D]">Contact Us</NavLink>
           </li>
         </ul>
       </div>
