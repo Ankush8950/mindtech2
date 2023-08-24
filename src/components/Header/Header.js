@@ -8,7 +8,7 @@ const Header = () => {
         {/* <img src="" alt="" /> */}
         <div className='flex flex-col items-center justify-center w-full h-screen'>
             <h1 className='font-bold text-4xl text-white'>CAREERS</h1>
-            <p className='font-semibold text-lg pl-20 pr-20 pt-10 text-white text-center'>At AMCI, we are looking for someone who is having a mind full of creativity and willing to expand their helping hands to make the platform captivating for the country’s medical field. If you decide to join us, you will be getting an awe-inspiring chance to work with a diverse team of doctors from all over the nation, hard-working engineers, talented designers, and many other folks to bring a brighter future for this platform.</p>
+            <p className='font-semibold text-lg pl-5 sm:pl-20 pr-5 sm:pr-20 pt-10 text-white text-center'>At AMCI, we are looking for someone who is having a mind full of creativity and willing to expand their helping hands to make the platform captivating for the country’s medical field. If you decide to join us, you will be getting an awe-inspiring chance to work with a diverse team of doctors from all over the nation, hard-working engineers, talented designers, and many other folks to bring a brighter future for this platform.</p>
         </div>
     </div>
     <div className='fixed bottom-10 right-10 z-20 bg-[#44C054] p-2 rounded'>

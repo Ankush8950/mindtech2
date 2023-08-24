@@ -8,7 +8,7 @@ import { Link, NavLink } from "react-router-dom";
 const Navbar = () => {
   const [ToggleMenus, setToggleMenu] = useState(false);
   return (
-    <div className="navbar shadow bg-white pl-10 pr-10 font-roboto w-full flex items-center justify-between">
+    <div className="navbar shadow bg-white pl-5 sm:pl-10 pr-5 sm:pr-10 font-roboto w-full flex items-center justify-between">
       <Link to="/" className="cursor-pointer">
         <img src={Logo} className="rounded w-[200px]" alt="" />
       </Link>
