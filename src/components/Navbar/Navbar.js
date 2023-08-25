@@ -7,6 +7,7 @@ import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [ToggleMenus, setToggleMenu] = useState(false);
+  
   return (
     <div className="navbar shadow bg-white pl-5 sm:pl-10 pr-5 sm:pr-10 font-roboto w-full flex items-center justify-between">
       <Link to="/" className="cursor-pointer">
@@ -47,10 +48,10 @@ const Navbar = () => {
                 className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded w-52"
               >
                 <li>
-                  <a href='https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md'>Internet of Things</a>
+                  <Link to='/internet-of-things'>Internet of Things</Link>
                 </li>
                 <li>
-                  <a href='https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md'>Item 2</a>
+                  <Link to=''>Item 2</Link>
                 </li>
               </ul>
             </li>

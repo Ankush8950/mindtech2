@@ -25,7 +25,7 @@ const App = () => {
         <Route path='/services' element={<Services />}/>
         <Route path='/careers' element={<Careers />}/>
         <Route path='/contact' element={<Contact />}/>
-        <Route path='/iot' element={<Iot />}/>
+        <Route path='/internet-of-things' element={<Iot />}/>
       </Routes>
       </ScrollToTop>
       <Footer />

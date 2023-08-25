@@ -6,7 +6,7 @@ import {AiOutlineClose} from "react-icons/ai"
 
 const ToggleMenu = ({setToggleMenu}) => {
   return (
-    <div className='absolute top-[40px] left-0 right-0 bg-white w-full h-full flex flex-col pt-5'>
+    <div className='absolute top-[40px] z-20 left-0 right-0 bg-white w-full h-full flex flex-col pt-5'>
         <div className='absolute right-2 top-7' onClick={()=>setToggleMenu(false)}  >
            <AiOutlineClose size={35} />
         </div>
@@ -37,10 +37,10 @@ const ToggleMenu = ({setToggleMenu}) => {
                 <summary className="text-black">Technology</summary>
                 <ul className="p-2 w-[200px]">
                   <li onClick={()=>setToggleMenu(false)}>
-                    <a href='https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md'>Submenu 1</a>
+                    <Link to='/internet-of-things'>Internet of Things</Link>
                   </li>
                   <li onClick={()=>setToggleMenu(false)}>
-                    <a href='https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md'>Submenu 2</a>
+                    <Link to='/'>Submenu 2</Link>
                   </li>
                 </ul>
               </details>

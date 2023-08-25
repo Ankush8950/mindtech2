@@ -18,6 +18,7 @@ const Form = ({ setToggle }) => {
       setFormData({...formData, [name]: value})
     }
     console.log(formData)
+    
   return (
     <>
       <div className="w-10/12 sm:w-6/12 lg:w-4/12 bg-white p-3 relative rounded">
