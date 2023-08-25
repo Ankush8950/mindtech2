@@ -94,6 +94,7 @@ const Contact = () => {
         <div className="mapouter">
           <div className="gmap_canvas">
             <iframe
+              title="fvd"
               className="gmap_iframe h-[300px] md:h-[400px]"
               width="100%"
               frameborder="0"

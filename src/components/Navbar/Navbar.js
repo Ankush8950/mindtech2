@@ -47,10 +47,10 @@ const Navbar = () => {
                 className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded w-52"
               >
                 <li>
-                  <a>Internet of Things</a>
+                  <a href='https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md'>Internet of Things</a>
                 </li>
                 <li>
-                  <a>Item 2</a>
+                  <a href='https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md'>Item 2</a>
                 </li>
               </ul>
             </li>

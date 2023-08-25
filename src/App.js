@@ -9,7 +9,7 @@ import About from "./components/About/About.js"
 import Services from "./components/Services/Services.js"
 import Careers from "./components/Careers/Careers.js"
 import ScrollToTop from './components/ScrollToTop'
-
+import Iot from './components/Iot/Iot'
 
 
 const App = () => {
@@ -25,6 +25,7 @@ const App = () => {
         <Route path='/services' element={<Services />}/>
         <Route path='/careers' element={<Careers />}/>
         <Route path='/contact' element={<Contact />}/>
+        <Route path='/iot' element={<Iot />}/>
       </Routes>
       </ScrollToTop>
       <Footer />

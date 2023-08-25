@@ -37,10 +37,10 @@ const ToggleMenu = ({setToggleMenu}) => {
                 <summary className="text-black">Technology</summary>
                 <ul className="p-2 w-[200px]">
                   <li onClick={()=>setToggleMenu(false)}>
-                    <a>Submenu 1</a>
+                    <a href='https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md'>Submenu 1</a>
                   </li>
                   <li onClick={()=>setToggleMenu(false)}>
-                    <a>Submenu 2</a>
+                    <a href='https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md'>Submenu 2</a>
                   </li>
                 </ul>
               </details>
