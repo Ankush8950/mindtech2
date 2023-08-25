@@ -21,11 +21,11 @@ const Footer = () => {
             <h1 className="flex items-center text-[#18477E]"> <span className="mr-2"><GoLocation size={20} /></span> Address</h1>
             <div className="flex items-center text-[#18477E]">
             <p className="mr-2"><AiOutlineMail size={20} /></p>
-                <p className="font-semibold text-base">info@siliconbridgetechnologies.com</p>
+                <a href="mailto:info@siliconbridgetechnologies.com" className="font-semibold text-base">info@siliconbridgetechnologies.com</a>
             </div>
             <div className="flex items-center  font-semibold text-base text-[#18477E]">
             <p className="mr-2"><FaMobileAlt size={20}/></p>
-            <p className="font-semibold text-base">1234567890</p>
+            <a href="tel:1234567890" className="font-semibold text-base">1234567890</a>
             </div>
             {/* <a href="https://flowbite.com/" className="flex items-center">
                   <img src="https://flowbite.com/docs/images/logo.svg" className="h-8 mr-3" alt="FlowBite Logo" />
