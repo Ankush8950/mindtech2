@@ -21,17 +21,10 @@ const About = () => {
           <img src={TeamWork} alt="" />
         </div>
         <div className="md:w-1/2 bg-gray p-3">
-          <h1 className="font-bold text-4xl pt-5">About Us</h1>
+          <h1 className="font-bold text-4xl pt-5">Who We Are</h1>
           <p className="font-normal text-base pt-5">
-            We are a software consulting company that delivers cutting edge
-            solutions for global organisations and technology start-ups. For
-            more than 2 decades, we have been helping brands reimagine their
-            business through digitalisation. We provide services that improve
-            software architecture, overall operations by optimising software
-            portfolio and also create a tech-driven strategy. Our team of
-            professionals will make your digital transformation journey a
-            success, through careful planning and effective execution of the
-            outlined IT strategy.
+           At Silicon Bridge Technologies, we are the architects of possibility, the creators of innovation, and the catalysts
+           for change.Established in 2018 in the thriving hub of Bengaluru, we have emerged as a dynamic force in the realm of Information Technology services and consulting, specializing in serving the distinct needs of storage, server, and semiconductor companies.Our identity is rooted in our founding values, our unwavering commitment, and our relentless pursuit of excellence.
           </p>
           <Link to="/contact">
             <button className="bg-orange pl-7 pr-7 pt-2 pb-2 text-lg rounded text-white mt-5">

@@ -1,6 +1,6 @@
 import React from "react";
 import { FaFacebookF } from "react-icons/fa";
-import { AiOutlineTwitter } from "react-icons/ai";
+import { AiOutlineInstagram } from "react-icons/ai";
 import { BiLogoLinkedin } from "react-icons/bi";
 import {FaMobileAlt} from "react-icons/fa"
 import {AiOutlineMail} from "react-icons/ai"
@@ -48,16 +48,16 @@ const Footer = () => {
                     Industries
                   </Link>
                 </li> */}
-                <li className="mb-4">
+                {/* <li className="mb-4">
                   <Link to="" className="hover:underline">
                     Technology
                   </Link>
-                </li>
-                <li className="mb-4">
+                </li> */}
+                {/* <li className="mb-4">
                   <Link to="/services" className="hover:underline">
                     Services
                   </Link>
-                </li>
+                </li> */}
                   <li className="mb-4">
                   <Link to="/careers" className="hover:underline">
                     Careers
@@ -77,8 +77,8 @@ const Footer = () => {
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
                   <a
-                    href="href='https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md'"
-                    className="hover:underline  flex   "
+                    href="https://www.facebook.com/profile.php?id=61550098212258'"
+                    className="hover:underline  flex"
                   >
                     {" "}
                     <span className="w-8 h-8 mr-3 rounded-full bg-white border border-[#1877F2] flex items-center justify-center">
@@ -89,24 +89,35 @@ const Footer = () => {
                 </li>
                 <li className="mb-4">
                   <a
+                    href="https://www.instagram.com/siliconbridge75/?__coig_restricted=1"
+                    className="hover:underline  flex   "
+                  >
+                    <span className="w-8 h-8 mr-3 rounded-full bg-white border border-[#D74065] flex items-center justify-center">
+                      <AiOutlineInstagram size={20} color="#D74065" />
+                    </span>
+                    Instagram
+                  </a>
+                </li>
+                {/* <li className="mb-4">
+                  <a
                     href="href='https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md'"
                     className="hover:underline  flex   "
                   >
-                    <span className="w-8 h-8 mr-3 rounded-full bg-white border border-[#1877F2] flex items-center justify-center">
+                    <span className="w-8 h-8 mr-3 rounded-full bg-white border border-[#1C96E8] flex items-center justify-center">
                       <AiOutlineTwitter size={20} color="#1C96E8" />
                     </span>
                     Twitter
                   </a>
-                </li>
+                </li> */}
                 <li>
                   <a
-                    href="href='https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md'"
-                    className="hover:underline  flex      "
+                    href = "https://www.linkedin.com/feed/?trk=onboarding-landing"
+                    className="hover:underline  flex"
                   >
-                    <span className="w-8 h-8 mr-3 rounded-full bg-white border border-[#1877F2] flex items-center justify-center">
+                    <span className="w-8 h-8 mr-3 rounded-full bg-white border border-[#0A66C2] flex items-center justify-center">
                       <BiLogoLinkedin size={20} color="#0A66C2" />
                     </span>{" "}
-                    Linkdin
+                    Linkedin
                   </a>
                 </li>
               </ul>

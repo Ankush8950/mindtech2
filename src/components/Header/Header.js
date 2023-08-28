@@ -12,7 +12,7 @@ const Header = () => {
         </div>
     </div>
     <div className='fixed bottom-10 right-10 z-20 bg-[#44C054] p-2 rounded'>
-      <a href="https://wa.me/0000111122">
+      <a href="https://wa.me/9035798458">
         <BsWhatsapp size={40} color='white'/>
       </a>
     </div>

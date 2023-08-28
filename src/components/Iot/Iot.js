@@ -1,11 +1,19 @@
 import React from "react";
+import IotImg from "../Image/IoT.jpeg"
+import IotImg1 from "../Image/iot2-removebg-preview.png"
+
 
 const Iot = () => {
   return (
     <>
     <div className="font-roboto pb-20">
-      <img src="https://www.mindteck.com/assets/images/IoT_1624784529-1626183944.jpeg" alt="iot"/>
-      <div className="pl-5 md:pl-10 pr-5 md:pr-10 pt-10 md:w-8/12">
+
+    <div className="w-full h-[350px] flex items-center justify-center opacity-80" style={{backgroundImage: `url(${IotImg})`,backgroundPosition:"center",backgroundSize:"cover"}}>
+      <h1 className="font-bold text-4xl text-white">Internet of Things</h1>
+    </div>
+      {/* <img src="https://www.mindteck.com/assets/images/IoT_1624784529-1626183944.jpeg" alt="iot"/> */}
+      <div className="flex flex-col-reverse md:flex-row pl-5 md:pl-10 pr-5 md:pr-10 pt-10">
+      <div className=" md:w-6/12">
         <h1 className="font-bold text-2xl text-[#04789D]">Building The Future - IoT Solutions and Services</h1>
       <div className="pt-5">
         <p className="font-medium text-base">Siliconbridge Technologies IoT services and solutions are designed to provide efficient, cost-effective, secure and customized insights and analysis from real-time data collected via connected devices and products for better decision-making and more productive business operations.</p>
@@ -21,6 +29,10 @@ const Iot = () => {
           <li>wearables and remote diagnostics for patient monitoring and medical equipment.</li>
         </ul>
       </div>
+      </div>
+      </div>
+      <div className="md:w-6/12 md:h-4/6">
+        <img className="w-full h-full mb-10 md:mb-0" src={IotImg1} alt="" />
       </div>
       </div>
       </div>

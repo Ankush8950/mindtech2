@@ -4,6 +4,7 @@ import { RiMenuFill } from "react-icons/ri";
 import ToggleMenu from "../ToggleMenu/ToggleMenu";
 import { AiOutlineClose } from "react-icons/ai";
 import { Link, NavLink } from "react-router-dom";
+import {IoIosArrowDown } from "react-icons/io"
 
 const Navbar = () => {
   const [ToggleMenus, setToggleMenu] = useState(false);
@@ -41,24 +42,46 @@ const Navbar = () => {
               <label
                 tabIndex={0}
                  className = "text-[#04789D] hover:text-[#04789D]" >
-                   Technology
+                   Technology <IoIosArrowDown />
               </label>
               <ul
                 tabIndex={0}
                 className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded w-52"
               >
-                <li>
+                <li className="text-[#04789D]">
                   <Link to='/internet-of-things'>Internet of Things</Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link to=''>Item 2</Link>
+                </li> */}
+              </ul>
+            </li>
+            <li className="dropdown dropdown-hover">
+              <label
+                tabIndex={0}
+                 className = "text-[#04789D] hover:text-[#04789D]" >
+                   Services <IoIosArrowDown />
+              </label>
+              <ul
+                tabIndex={0}
+                className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded w-52"
+              >
+              <div>
+                <div >
+                <h1 className="border-b pb-3 pl-4 font-medium text-base text-[#04789D]">Development</h1>
+                    <div className="mt-2">
+                      <li className="text-[#04789D]">
+                  <Link to='/app-development'>App Development</Link>
                 </li>
+                {/* <li>
+                  <Link to=''>Item 2</Link>
+                </li> */}
+                    </div>
+                </div>
+              </div>
               </ul>
             </li>
          
-          <li>
-            <NavLink to="/services" className="text-[#04789D] hover:text-[#04789D]">Services</NavLink>
-          </li>
           <li>
             <NavLink to="/careers" className="text-[#04789D] hover:text-[#04789D]">Careers</NavLink>
           </li>
