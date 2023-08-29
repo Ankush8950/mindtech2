@@ -2,10 +2,10 @@ import React from "react";
 import { FaFacebookF } from "react-icons/fa";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { BiLogoLinkedin } from "react-icons/bi";
-import {FaMobileAlt} from "react-icons/fa"
-import {AiOutlineMail} from "react-icons/ai"
-import {GoLocation} from "react-icons/go"
-import Logo from "../Image/logo.jpg"
+import {FaMobileAlt} from "react-icons/fa";
+import {AiOutlineMail} from "react-icons/ai";
+import {GoLocation} from "react-icons/go";
+import Logo from "../Image/logo.jpg";
 import { Link } from "react-router-dom";
 
 

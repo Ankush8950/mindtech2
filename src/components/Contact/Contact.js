@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ContactHead from "../Image/freshhh.png";
 // import conatctImg from "../Image/conatct.png";
 import { HiLocationMarker } from 'react-icons/hi';
@@ -8,6 +8,26 @@ import {BiPhoneCall} from "react-icons/bi"
 import "./Contact.css";
 
 const Contact = () => {
+  const [data,setData] = useState({
+    name: "",
+    email:"",
+    subject:"",
+    message:""
+  })
+console.log(data);
+  const onHandleChange = (e) =>{
+    const formData = {...data}
+    formData[e.target.name] = e.target.value
+    setData(formData)
+  }
+
+
+  const handleSubmit = (e) =>{
+    e.preventDefault()
+    console.log(data);
+  }
+
+
   return (
     <div className="pt-5 pb-10 font-roboto">
       <div className="w-full h-full overflow-hidden	 relative flex items-center justify-center ">
@@ -45,7 +65,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="w-full md:w-5/6 flex items-center justify-center shadow-2xl p-5">
-          <form className="w-full ">
+          <form className="w-full " onSubmit={handleSubmit}>
           <div class="mb-3">
               <label
                 for="name"
@@ -56,9 +76,13 @@ const Contact = () => {
               <input
                 type="name"
                 id="email"
+                name="name"
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="name"
+                value={data.name}
+                onChange={onHandleChange}
                 required
+
               />
             </div>
             <div className="mb-3">
@@ -71,8 +95,11 @@ const Contact = () => {
               <input
                 type="email"
                 id="email"
+                name="email"
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="name@gmail.com"
+                value={data.email}
+                onChange={onHandleChange}
                 required
               />
             </div>
@@ -86,8 +113,11 @@ const Contact = () => {
               <input
                 type="subject"
                 id="subject"
+                name="subject"
                 placeholder="subject"
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                value={data.subject}
+                onChange={onHandleChange}
                 required
               />
             </div>
@@ -101,8 +131,11 @@ const Contact = () => {
               <textarea
                 type="message"
                 id="message"
+                name="message"
                 placeholder="message"
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                value={data.message}
+                onChange={onHandleChange}
                 required
               />
             </div>
