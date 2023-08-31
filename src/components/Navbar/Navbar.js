@@ -82,9 +82,9 @@ const Navbar = () => {
               </ul>
             </li>
          
-          <li>
+          {/* <li>
             <NavLink to="/careers" className="text-[#04789D] hover:text-[#04789D]">Careers</NavLink>
-          </li>
+          </li> */}
           <li>
             <NavLink to="/contact" className="text-[#04789D] hover:text-[#04789D]">Contact Us</NavLink>
           </li>

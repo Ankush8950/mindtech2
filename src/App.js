@@ -11,6 +11,8 @@ import Careers from "./components/Careers/Careers.js"
 import ScrollToTop from './components/ScrollToTop'
 import Iot from './components/Iot/Iot'
 import AppDevelopment from './components/AppDevelopment/AppDevelopment'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
 const App = () => {
@@ -24,7 +26,7 @@ const App = () => {
         <Route path='/about-us' element={<About />}/>
         <Route path='/contact' element={<Contact />}/>
         <Route path='/services' element={<Services />}/>
-        <Route path='/careers' element={<Careers />}/>
+        {/* <Route path='/careers' element={<Careers />}/> */}
         <Route path='/contact' element={<Contact />}/>
         <Route path='/internet-of-things' element={<Iot />}/>
         <Route path='/app-development' element={<AppDevelopment />} />

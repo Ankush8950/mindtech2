@@ -1,13 +1,65 @@
-import React from 'react'
-import AppDevelopmentImg from "../Image/app-development.jpg" 
+import React from "react";
+// import AppDevelopmentImg from "../Image/app-development.jpg"
+import serviceData from "../Services/ServiceData";
+import cartData from "./CartApp";
+import Slider from "react-slick";
+
 
 const AppDevelopment = () => {
+  var settings = {
+    infinite: true,
+    speed: 1000,
+    pauseOnHover: false,
+    autoplay: true,
+    variableWidth: false,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  };
   return (
-    <div className='font-roboto flex flex-col items-center justify-center'>
-        <div className='w-full h-[350px] opacity-75 flex items-center justify-center'  style={{backgroundImage: `url(${AppDevelopmentImg})`,backgroundPosition:"center",backgroundSize:"cover"}}>
-        <h1 className='font-bold text-4xl text-white'>Application Development</h1>
-        </div>
-        <div className='p-10 w-5/6 bg-gray mt-10 mb-10 rounded'>
+    <div className="font-roboto flex flex-col items-center justify-center pb-20">
+    <div className="w-[95%] h-full mt-5 ">
+    <Slider {...settings}>
+      
+        {cartData.map((item) => {
+          return (
+            <>
+            <div
+              className="w-full h-[400px]  flex  items-center justify-start"
+              style={{
+                backgroundImage: `url(${item.img})`,
+                backgroundPosition: "center",
+                backgroundSize: "cover",
+              }}
+            >
+            {/* <img src={item.img} alt="" /> */}
+              <div className="flex flex-col pl-20">
+                <h1 className="font-bold text-4xl text-white">
+                {item.name}
+              </h1>
+              <p className="text-white pt-5 w-2/3">{item.para}</p>
+              </div>
+            </div>
+            </>
+          );
+        })}
+      </Slider>
+      </div>
+<div>
+        <h1></h1>
+      <div className="flex flex-wrap space-x-3 mt-10">
+        {serviceData.map((item) => {
+          return (
+            <div className="flex flex-col items-center justify-center w-[250px] rounded h-[230px] shadow-xl cursor-pointer text-[#04789D] hover:bg-[#04789D] hover:text-white">
+              <p className="text-3xl ">{item.icon}</p>
+              <h1 className="capitalize pt-5 font-semibold text-xl">
+                {item.name}
+              </h1>
+            </div>
+          );
+        })}
+      </div>
+      </div>
+      {/* <div className='p-10 w-5/6 bg-gray mt-10 mb-10 rounded'>
             <h1 className='font-bold text-3xl'>Application Development</h1>
             <div className='pt-5'>
                 <p className='font-medium text-base'>Application development is complex and dynamic. To meet business needs, leaders must align with an application development services partner that possesses a proven track record, a quality approach to delivering consistent results and the expertise required to drive successful outcomes.</p>
@@ -24,9 +76,9 @@ const AppDevelopment = () => {
                     <li className='font-normal text-base'>Work to reduce capital expenditure through utility models.</li>
                 </ul>
             </div>
-        </div>
+        </div> */}
     </div>
-  )
-}
+  );
+};
 
-export default AppDevelopment
+export default AppDevelopment;
