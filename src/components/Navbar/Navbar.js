@@ -71,7 +71,7 @@ const Navbar = () => {
                 <h1 className="border-b pb-3 pl-4 font-medium text-base text-[#04789D]">Development</h1>
                     <div className="mt-2">
                       <li className="text-[#04789D]">
-                  <Link to='/app-development'>App Development</Link>
+                  <Link to='/app-development'>Qa Automation</Link>
                 </li>
                 {/* <li>
                   <Link to=''>Item 2</Link>

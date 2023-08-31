@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import AboutTopImage from "../Image/sub-header.jpg";
 import Our_Approuch from "../Image/our_approch-preview.png"
+import whatwedo from "../Image/whatwedo.png"
 import TeamWork from "../Image/teamwork-web-concept.avif"
 
 
@@ -33,7 +34,24 @@ const About = () => {
           </Link>
         </div>
       </div>
+     
+
       <div className="flex flex-col-reverse md:flex-row items-center justify-between pl-10 pr-10">
+      
+        <div className="md:w-1/2 bg-gray pt-10 pb-10 p-3">
+          <h1 className="font-bold text-4xl">What We Do</h1>
+          <p className="font-normal text-base pt-5">
+          We place technology talent in contract positions with businesses that support legacy systems, modern and emerging technologies, such as Deviops / AWS Cloud, Azure, Agile Project Management, Artificial intelligence, Cybersecurity, Data Science, Devops, Full Stack / Java / JavaScript Developers, Machine Learning, and Scrum Masters, among others.          
+            </p>
+        </div>
+        <div className="md:w-1/2 flex items-center justify-center">
+          <img src={whatwedo} alt="" />
+        </div>
+      </div>
+       <div className="flex flex-col md:flex-row items-center justify-between pl-10 pr-10">
+       <div className="md:w-1/2 flex items-center justify-center">
+          <img src={Our_Approuch} alt="" />
+        </div>
         <div className="md:w-1/2 bg-gray pt-10 pb-10 p-3">
           <h1 className="font-bold text-4xl">Our Approach</h1>
           <p className="font-normal text-base pt-5">
@@ -48,9 +66,7 @@ const About = () => {
             choosing the right technology for your business, but also in mapping
             out the implementation strategy and helping you implement them.</p>
         </div>
-        <div className="md:w-1/2 flex items-center justify-center">
-          <img src={Our_Approuch} alt="" />
-        </div>
+        
       </div>
     </div>
   );
