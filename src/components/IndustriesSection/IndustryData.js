@@ -1,34 +1,42 @@
+import widgetImage1 from "../Image/wedget-image1.jpg"
+import widgetImage2 from "../Image/widget-image2.jpg"
+import widgetImage3 from "../Image/widget-image3.jpg"
+import widgetImage4 from "../Image/widget-image7.jpg"
+import widgetImage5 from "../Image/widget-image5.jpg"
+import widgetImage6 from "../Image/widget-image6.jpg"
+
+
 const IndustryData = [
+    // {
+    //     IndustryImage: widgetImage1 ,
+    //     IndustryBottomColor: "#341948",
+    //     IndustryPara: "Remote Patient Monitoring Device Enhancements",
+    // },
     {
-        IndustryImage: "https://www.mindteck.com/assets/custom_widget_images/1554904145rdt%20feature041019.jpg",
-        IndustryBottomColor: "#341948",
-        IndustryPara: "Remote Patient Monitoring Device Enhancements",
-    },
-    {
-        IndustryImage: "https://www.mindteck.com/assets/custom_widget_images/1634957582CS-SL-102221.jpg",
+        IndustryImage: widgetImage2,
         IndustryBottomColor: "#0b3978",
         IndustryPara: "Optimization and Modernization of Workforce Management Software",
     },
+    // {
+    //     IndustryImage: widgetImage3,
+    //     IndustryBottomColor: "#55710d",
+    //     IndustryPara: "Sustainable IoT Solution for Soil Condition Monitoring",
+    // },
     {
-        IndustryImage: "https://www.mindteck.com/assets/custom_widget_images/16379321671616772744SW-Feature.jpeg",
-        IndustryBottomColor: "#55710d",
-        IndustryPara: "Sustainable IoT Solution for Soil Condition Monitoring",
+        IndustryImage: widgetImage4,
+        IndustryBottomColor: "#0836AE",
+        IndustryPara: "IT infrastructure management solutions handle the critical IT infrastructure.",
     },
     {
-        IndustryImage: "https://www.mindteck.com/assets/custom_widget_images/163793221816172801061568211259Wea-feature.jpeg",
-        IndustryBottomColor: "#a24c31",
-        IndustryPara: "Wearable Device Solution Increases Manufacturing Productivity by 20%",
-    },
-    {
-        IndustryImage: "https://www.mindteck.com/assets/custom_widget_images/16379321031635153232bigdata-NS102521.jpeg",
+        IndustryImage: widgetImage5,
         IndustryBottomColor: "#43485e",
         IndustryPara: "Big Data Analytics for a Leading Analytical Instrument Company",
     },
     {
-        IndustryImage: "https://www.mindteck.com/assets/custom_widget_images/1637933741NA-112621.jpg",
+        IndustryImage: widgetImage6,
         IndustryBottomColor: "#021033",
         IndustryPara: "Data Storage Services Partner for Multiple Product Generations",
     },
 ]
 
-module.exports = IndustryData;
+export default IndustryData

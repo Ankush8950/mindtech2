@@ -7,10 +7,10 @@ const IndustryCard = ({data}) => {
   const [togggle,setToggle] = useState(false)
 
   return (
-    <div className=''>
-    <div className="w-[350px] h-auto m-3 cursor-pointer rounded-lg" onClick={()=>setToggle(true)}>
-      <div className="w-full " >
-        <img className='' src={IndustryImage} alt="" />
+    <div className='rounded'>
+    <div className="w-[350px] h-auto m-3 cursor-pointer rounded" onClick={()=>setToggle(true)}>
+      <div className="w-full h-[200px] " >
+        <img className='h-full w-full rounded-t' src={IndustryImage} alt="" />
       </div>
       <div className="h pt-2" style={{backgroundColor: `${IndustryBottomColor}`}}>
         <p className=" text-white p-5 font-semibold text-base">{IndustryPara}</p>

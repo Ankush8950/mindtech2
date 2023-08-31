@@ -7,7 +7,7 @@ import IndustryData from './IndustryData'
 const IndustriesSection = () => {
   return (
     <>
-    <div className="IndustriesSection_container">
+    <div className="IndustriesSection_container pb-10">
     {IndustryData.map( (elm, index) => {
       return <IndustryCard data={elm} key={index}/>
     })}
