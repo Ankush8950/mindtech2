@@ -12,7 +12,7 @@ const IndustryCard = ({data}) => {
       <div className="w-full h-[200px] " >
         <img className='h-full w-full rounded-t' src={IndustryImage} alt="" />
       </div>
-      <div className="h pt-2" style={{backgroundColor: `${IndustryBottomColor}`}}>
+      <div className="h-[120px] pt-2 pb-2" style={{backgroundColor: `${IndustryBottomColor}`}}>
         <p className=" text-white p-5 font-semibold text-base">{IndustryPara}</p>
       </div>
     </div>

@@ -16,9 +16,9 @@ const Footer = () => {
     <footer className="bg-white dark:bg-gray-900 font-roboto shadow-2xl pl-5 sm:pl-0 pr-5 sm:pr-0">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
-          <div className="mb-6 md:mb-0  md:pl-10 space-y-3">
+          <div className="mb-6 md:mb-0  md:pl-10 space-y-3 w-[400px]">
             <img className="ml-[-30px] mt-[-30px]" src={Logo} alt="" />
-            <h1 className="flex items-center text-[#18477E]"> <span className="mr-2"><GoLocation size={20} /></span> Address</h1>
+            <h1 className="flex  text-[#18477E] sm:w-[400px]"> <span className="mr-2"><GoLocation size={20} /></span> silicon bridge technologies , 2nd floor , 4th cross , 7th main , NKR Park, Hosur road , muniyappa layout, Garvebhavipalya, bengaluru , karnataka, 560068</h1>
             <div className="flex items-center text-[#18477E]">
             <p className="mr-2"><AiOutlineMail size={20} /></p>
                 <a href="mailto:info@siliconbridgetechnologies.com" className="font-semibold text-base">info@siliconbridgetechnologies.com</a>

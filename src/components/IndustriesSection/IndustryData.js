@@ -1,6 +1,6 @@
 import widgetImage1 from "../Image/wedget-image1.jpg"
 import widgetImage2 from "../Image/widget-image2.jpg"
-import widgetImage3 from "../Image/widget-image3.jpg"
+import widgetImage3 from "../Image/image_devops.jpg"
 import widgetImage4 from "../Image/widget-image7.jpg"
 import widgetImage5 from "../Image/widget-image5.jpg"
 import widgetImage6 from "../Image/widget-image6.jpg"
@@ -17,11 +17,11 @@ const IndustryData = [
         IndustryBottomColor: "#0b3978",
         IndustryPara: "Optimization and Modernization of Workforce Management Software",
     },
-    // {
-    //     IndustryImage: widgetImage3,
-    //     IndustryBottomColor: "#55710d",
-    //     IndustryPara: "Sustainable IoT Solution for Soil Condition Monitoring",
-    // },
+    {
+        IndustryImage: widgetImage3,
+        IndustryBottomColor: "#55710d",
+        IndustryPara: "DevOps is a way for the business to regain trust in the entire IT organization as a whole.",
+    },
     {
         IndustryImage: widgetImage4,
         IndustryBottomColor: "#0836AE",
