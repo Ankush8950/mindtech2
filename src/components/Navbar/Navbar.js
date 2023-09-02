@@ -56,7 +56,7 @@ const Navbar = () => {
                 </li> */}
               </ul>
             </li>
-            <li className="dropdown dropdown-hover">
+            {/* <li className="dropdown dropdown-hover">
               <label
                 tabIndex={0}
                  className = "text-[#04789D] hover:text-[#04789D]" >
@@ -76,11 +76,14 @@ const Navbar = () => {
                 {/* <li>
                   <Link to=''>Item 2</Link>
                 </li> */}
-                    </div>
+                    {/* </div>
                 </div>
               </div>
               </ul>
-            </li>
+            {/* </li> */} 
+            <li>
+            <NavLink to="/services" className="text-[#04789D] hover:text-[#04789D]">Service</NavLink>
+          </li>
          
           {/* <li>
             <NavLink to="/careers" className="text-[#04789D] hover:text-[#04789D]">Careers</NavLink>

@@ -42,12 +42,12 @@ console.log(data);
       <div className="flex flex-col md:flex-row  justify-center pt-10 pb-10 pl-5 md:pl-10 pr-5 md:pr-10">
         <div className="w-full flex flex-col pl-5 sm:pl-10  md:pl-0 md:w-3/6">
           {/* <img src={conatctImg} alt="" /> */}
-            <h1 className="font-bold text-xl text-[#04789D]">Get In Touch</h1>
+            <h1 className="font-bold text-4xl text-[#04789D]">Get In Touch</h1>
           <div className="flex flex-col">
             <h1 className="font-semibold text-xl pt-2">Reach Us</h1>
-            <div className="flex items-center pt-3">
+            <div className="flex  pt-3">
             <HiLocationMarker size={20} color="#04789D"/>
-              <p className="font-bold text-xl capitalize ml-2">address</p>
+              <p className="font-normal text-base capitalize ml-2 w-[350px]">silicon bridge technologies , 2nd floor , 4th cross , 7th main , NKR Park, Hosur road , muniyappa layout, Garvebhavipalya, bengaluru , karnataka, 560068</p>
             </div>
             <div className="flex pt-2">
               <MdEmail size={20} color="#04789D" />

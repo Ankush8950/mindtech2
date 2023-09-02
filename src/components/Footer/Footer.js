@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <footer className="bg-white dark:bg-gray-900 font-roboto shadow-2xl pl-5 sm:pl-0 pr-5 sm:pr-0">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-        <div className="md:flex md:justify-between">
+        <div className="flex flex-wrap justify-between pr-10">
           <div className="mb-6 md:mb-0  md:pl-10 space-y-3 w-[400px]">
             <img className="ml-[-30px] mt-[-30px]" src={Logo} alt="" />
             <h1 className="flex  text-[#18477E] sm:w-[400px]"> <span className="mr-2"><GoLocation size={20} /></span> silicon bridge technologies , 2nd floor , 4th cross , 7th main , NKR Park, Hosur road , muniyappa layout, Garvebhavipalya, bengaluru , karnataka, 560068</h1>
@@ -27,13 +27,8 @@ const Footer = () => {
             <p className="mr-2"><FaMobileAlt size={20}/></p>
             <a href="tel:1234567890" className="font-semibold text-base">1234567890</a>
             </div>
-            {/* <a href="https://flowbite.com/" className="flex items-center">
-                  <img src="https://flowbite.com/docs/images/logo.svg" className="h-8 mr-3" alt="FlowBite Logo" />
-                  <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
-              </a> */}
           </div>
-          <div className="grid grid-cols-2 gap-8 sm:gap-[100px] sm:grid-cols-3">
-            <div>
+            <div className="sm:w-[300px] md:w-[300px] sm:pl-10 m-3">
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
                 Get to Know Us
               </h2>
@@ -53,16 +48,16 @@ const Footer = () => {
                     Technology
                   </Link>
                 </li> */}
-                {/* <li className="mb-4">
+                <li className="mb-4">
                   <Link to="/services" className="hover:underline">
                     Services
                   </Link>
-                </li> */}
-                  <li className="mb-4">
-                  <Link to="/careers" className="hover:underline">
+                </li>
+                  {/* <li className="mb-4">
+                  <Link to="/app-development" className="hover:underline">
                     Careers
                   </Link>
-                </li>
+                </li> */}
                   <li className="mb-4">
                   <Link to="/contact" className="hover:underline">
                     Contact Us
@@ -70,7 +65,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div>
+            <div className="sm:w-[300px] md:w-[300px] m-3 sm:pl-10 ">
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
                 Connect with Us
               </h2>
@@ -122,7 +117,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div>
+            {/* <div>
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
                 Legal
               </h2>
@@ -143,8 +138,7 @@ const Footer = () => {
                   </a>
                 </li>
               </ul>
-            </div>
-          </div>
+            </div> */}
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div className="flex items-center justify-center ">

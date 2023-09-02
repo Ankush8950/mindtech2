@@ -1,9 +1,9 @@
 import React from "react";
-// import AppDevelopmentImg from "../Image/app-development.jpg"
-import serviceData from "../Services/ServiceData";
+import devops from "../Image/devOpsRightColImg-1-removebg-preview.png"
+import VirtualizationImg from "../Image/Virtualization-removebg-preview.png"
+// import serviceData from "../Services/ServiceData";
 import cartData from "./CartApp";
 import Slider from "react-slick";
-
 
 const AppDevelopment = () => {
   var settings = {
@@ -13,51 +13,101 @@ const AppDevelopment = () => {
     autoplay: true,
     variableWidth: false,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
   };
   return (
     <div className="font-roboto flex flex-col items-center justify-center pb-20">
-    <div className="w-[95%] h-full mt-5 ">
-    <Slider {...settings}>
-      
-        {cartData.map((item) => {
-          return (
-            <>
-            <div
-              className="w-full h-[400px]  flex  items-center justify-start"
-              style={{
-                backgroundImage: `url(${item.img})`,
-                backgroundPosition: "center",
-                backgroundSize: "cover",
-              }}
-            >
-            {/* <img src={item.img} alt="" /> */}
-              <div className="flex flex-col pl-20">
-                <h1 className="font-bold text-4xl text-white">
-                {item.name}
-              </h1>
-              <p className="text-white pt-5 w-2/3">{item.para}</p>
+      <div className="w-full h-[300px] sm:h-[450px] overflow-hidden">
+        <div className="w-full h-full mt-5 ">
+          <Slider {...settings}>
+            {cartData.map((item) => {
+              return (
+                <>
+                  <div
+                    className="w-full h-[300px] sm:h-[450px]  flex  items-center justify-start"
+                    style={{
+                      backgroundImage: `url(${item.img})`,
+                      backgroundPosition: "center",
+                      backgroundSize: "cover",
+                    }}
+                  >
+                    {/* <img src={item.img} alt="" /> */}
+                    <div className="flex flex-col pl-5 sm:pl-20">
+                      <h1 className="font-bold text-4xl text-white">
+                        {item.name}
+                      </h1>
+                      <p className="text-white pt-5 w-2/3">{item.para}</p>
+                    </div>
+                  </div>
+                </>
+              );
+            })}
+          </Slider>
+        </div>
+      </div>
+      <div>
+        {/* <h1></h1> */}
+        {/* <div className="flex flex-wrap items-center justify-center mt-10">
+          {serviceData.map((item) => {
+            return (
+              <div className="flex flex-col items-center justify-center w-[250px] rounded h-[230px] shadow-xl cursor-pointer text-[#04789D] hover:bg-[#04789D] hover:text-white m-2">
+                <p className="text-3xl ">{item.icon}</p>
+                <h1 className="capitalize pt-5 font-semibold text-xl">
+                  {item.name}
+                </h1>
               </div>
-            </div>
-            </>
-          );
-        })}
-      </Slider>
-      </div>
-<div>
-        <h1></h1>
-      <div className="flex flex-wrap space-x-3 mt-10">
-        {serviceData.map((item) => {
-          return (
-            <div className="flex flex-col items-center justify-center w-[250px] rounded h-[230px] shadow-xl cursor-pointer text-[#04789D] hover:bg-[#04789D] hover:text-white">
-              <p className="text-3xl ">{item.icon}</p>
-              <h1 className="capitalize pt-5 font-semibold text-xl">
-                {item.name}
-              </h1>
-            </div>
-          );
-        })}
-      </div>
+            );
+          })}
+        </div> */}
+        <div className="bg-gray pl-10 pr-10 pb-10">
+          <h1 className="text-center font-bold text-3xl pt-10 text-[#18477E]">DevOps</h1>
+          <div className="w-full h-[2px] bg-[#18477E] mt-3"></div>
+          <div className="flex flex-col-reverse lg:flex-row items-center justify-center">
+          <div className="pt-10 w-full lg:w-1/2 ">
+            <p className="font-medium text-sm">Silicon Bridge Technologies carves your path towards modern IT by empowering you to create a platform-centric architecture. Our DevOps Automation Specialists allow easy managing of cloud-native and traditional workloads while ensuring seamless application development and delivery.</p>
+            <p className="font-medium text-sm">Silicon Bridge Technologies doesn’t just bring a 360-degree DevOps culture at first. We undertake a modular approach and create a rational roadmap, underlining the organization’s unique needs. Our DevOps Architects then gauge your organization’s maturity levels at multiple fronts. Based on your existing IT infrastructure strength, we leverage Infrastructure as Code (IaC) to induce intelligent automation within your infrastructure and ensure it adapts to heavy workloads at scale. This ensures minimum vendor-lock ins.</p>
+            <ul className="list-disc mt-5 space-y-2">
+              <li className="font-semibold text-sm">
+                Building ecosystem around Docker containers using configuration management tools such as Ansible, Chef, Puppet etc.
+              </li>
+              <li className="font-semibold text-sm">Product development support for making service container ready with Microservice architecture.</li>
+              <li className="font-semibold text-sm">Cloud Integration for containers and supplementary tool chain.</li>
+              <li className="font-semibold text-sm">Develop ecosystem and workflows around EC2 Container service to allow seamless configuration and deployment of VMs</li>
+              <li className="font-semibold text-sm">Orchestration using Apache Mesos to launch dynamic workloads onto a single cluster</li>
+            </ul>
+          </div>
+          <div className ="pl-5 pt-10 lg:pt-10">
+            <img src={devops} alt="" />
+          </div>
+          </div>
+        </div>
+
+
+        {/* Virtualization */}
+        <div className="bg-gray pl-10 pr-10 pb-10">
+          <h1 className="text-center font-bold text-3xl pt-10 text-[#18477E]">Virtualization</h1>
+          <div className="w-full h-[2px] bg-[#18477E] mt-3"></div>
+          <div className="flex flex-col lg:flex-row items-center justify-center">
+          <div className ="pl-5 pt-10 lg:pt-10 w-1/2">
+            <img src={VirtualizationImg} alt="" />
+          </div>
+          <div className="pt-10 w-full lg:w-1/2 md:pl-10">
+            <p className="font-medium text-sm">Silicon Bridge Technologies has gathered expertise in all areas of virtualization by executing multiple virtualization projects on different platforms like VMware and Microsoft Hyper-V. We have helped several ISVs in developing innovative solutions that take advantage of growing technologies and reducing costs without compromising on quality or efficiency. Our virtualization architects efficiently consolidate your networking, storage, and server infrastructure helping you handle dynamic workloads and save costs, concurrently. Our engineers help you integrate VMware, Citrix Xen, Hyper-V, and KVM to support their product features within these platforms. They further create a hassle-free infrastructure management environment by developing vCenter, SCVMM, VCO, XenCenter, and snapshot management plugins. We help you with the execution of VMware, WHQL/WLK, Citrix, and Linux certifications by setting up a certification environment.</p>
+            
+            <h1 className="font-semibold text-lg mt-5">Our focus areas include</h1>
+            <ul className="list-disc mt-2 space-y-2">
+              <li className="font-semibold text-sm">
+                Desktop virtualization
+              </li>
+              <li className="font-semibold text-sm">Server virtualization.</li>
+              <li className="font-semibold text-sm">Storage virtualization.</li>
+              <li className="font-semibold text-sm">Network virtualization</li>
+              <li className="font-semibold text-sm">Application virtualization</li>
+            </ul>
+          </div>
+          
+          </div>
+        </div>
       </div>
       {/* <div className='p-10 w-5/6 bg-gray mt-10 mb-10 rounded'>
             <h1 className='font-bold text-3xl'>Application Development</h1>

@@ -39,15 +39,22 @@ const ToggleMenu = ({setToggleMenu}) => {
                   <li onClick={()=>setToggleMenu(false)}>
                     <Link to='/internet-of-things'>Internet of Things</Link>
                   </li>
-                  <li onClick={()=>setToggleMenu(false)}>
-                    <Link to='/'>Submenu 2</Link>
-                  </li>
+                  
                 </ul>
               </details>
             </li>
-            <li onClick={()=>setToggleMenu(false)}>
-              <Link to="/services" className="text-black">Services</Link>
+            <li tabIndex={0} className="">
+              <details>
+                <summary className="text-black">Services</summary>
+                <ul className="p-2 w-[200px]">
+                  <li onClick={()=>setToggleMenu(false)}>
+                    <Link to='/app-development'>Qa Automation</Link>
+                  </li>
+                  
+                </ul>
+              </details>
             </li>
+           
             <li onClick={()=>setToggleMenu(false)}>
               <Link to="/careers" className="text-black">Careers</Link>
             </li>
