@@ -3,6 +3,7 @@ import { BsWhatsapp } from "react-icons/bs";
 import Slider from "react-slick";
 import HeaderCart from "./HeaderCart";
 import "./Header.css"
+import { Link } from "react-router-dom";
 
 const Header = () => {
   var settings = {
@@ -35,6 +36,7 @@ const Header = () => {
                     <p className="font-semibold text-base sm:text-xl pt-10 text-white sm:w-1/2">
                       {item.para}
                     </p>
+                    <Link to="/services" className="border border-[#04789D] pl-5 pr-5 pb-1 pt-1 font-medium text-[#04789D] hover:bg-[#04789D] hover:text-white rounded text-base mt-5">Learn More</Link>
                   </div>
                 </div>
               </>

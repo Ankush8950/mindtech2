@@ -1,6 +1,7 @@
 import React from "react";
-import devops from "../Image/devOpsRightColImg-1-removebg-preview.png"
-import VirtualizationImg from "../Image/Virtualization-removebg-preview.png"
+import devops from "../Image/devOpsRightColImg-1-removebg-preview.png";
+import VirtualizationImg from "../Image/Virtualization-removebg-preview.png";
+import QAAUtomationImg from "../Image/qa-automation-tools-banner-image-removebg-preview.png";
 // import serviceData from "../Services/ServiceData";
 import cartData from "./CartApp";
 import Slider from "react-slick";
@@ -59,53 +60,137 @@ const AppDevelopment = () => {
             );
           })}
         </div> */}
+
+        {/* QA Automation */}
+
         <div className="bg-gray pl-10 pr-10 pb-10">
-          <h1 className="text-center font-bold text-3xl pt-10 text-[#18477E]">DevOps</h1>
+          <h1 className="text-center font-bold text-3xl pt-10 text-[#18477E]">
+           QA Automation 
+          </h1>
           <div className="w-full h-[2px] bg-[#18477E] mt-3"></div>
-          <div className="flex flex-col-reverse lg:flex-row items-center justify-center">
-          <div className="pt-10 w-full lg:w-1/2 ">
-            <p className="font-medium text-sm">Silicon Bridge Technologies carves your path towards modern IT by empowering you to create a platform-centric architecture. Our DevOps Automation Specialists allow easy managing of cloud-native and traditional workloads while ensuring seamless application development and delivery.</p>
-            <p className="font-medium text-sm">Silicon Bridge Technologies doesn’t just bring a 360-degree DevOps culture at first. We undertake a modular approach and create a rational roadmap, underlining the organization’s unique needs. Our DevOps Architects then gauge your organization’s maturity levels at multiple fronts. Based on your existing IT infrastructure strength, we leverage Infrastructure as Code (IaC) to induce intelligent automation within your infrastructure and ensure it adapts to heavy workloads at scale. This ensures minimum vendor-lock ins.</p>
-            <ul className="list-disc mt-5 space-y-2">
-              <li className="font-semibold text-sm">
-                Building ecosystem around Docker containers using configuration management tools such as Ansible, Chef, Puppet etc.
-              </li>
-              <li className="font-semibold text-sm">Product development support for making service container ready with Microservice architecture.</li>
-              <li className="font-semibold text-sm">Cloud Integration for containers and supplementary tool chain.</li>
-              <li className="font-semibold text-sm">Develop ecosystem and workflows around EC2 Container service to allow seamless configuration and deployment of VMs</li>
-              <li className="font-semibold text-sm">Orchestration using Apache Mesos to launch dynamic workloads onto a single cluster</li>
-            </ul>
-          </div>
-          <div className ="pl-5 pt-10 lg:pt-10">
-            <img src={devops} alt="" />
-          </div>
+          <div className="flex flex-col lg:flex-row items-center justify-center">
+          <div className="pl-5 pt-10 lg:pt-10">
+              <img src={QAAUtomationImg} alt="" />
+            </div>
+            <div className="pt-10 w-full lg:w-1/2 md:pl-10">
+              <p className="font-medium text-base">
+               Silicon Bridge Technologies help in customizing the test automation framework of the monolithic enterprise applications to be compatible with micro - services applications.Our QA experts also can help you in integrating Lab Reservation, Log Collection and Auto Triaging Application with Jenkins CI Software.
+              </p>
+              <p className="font-medium text-base pt-3">
+               We help ISVs and Enterprises by Framework Engine, which is capable of testing unit/system level functionalities of microservices based applications. It communicates with microservices and validate the capability based on the configuration provided. This Engine test suite / Framework libraries can be scaled according to the number microservices in the application. Further, the Framework Harness is standalone and / or can be plugged into DevOps environment for build monitoring / execution / reporting.
+              </p>
+              
+            </div>
+            
           </div>
         </div>
 
+        {/* devops */}
+        <div className="bg-gray pl-10 pr-10 pb-10">
+          <h1 className="text-center font-bold text-3xl pt-10 text-[#18477E]">
+            DevOps
+          </h1>
+          <div className="w-full h-[2px] bg-[#18477E] mt-3"></div>
+          <div className="flex flex-col-reverse lg:flex-row items-center justify-center">
+            <div className="pt-10 w-full lg:w-1/2 ">
+              <p className="font-medium text-base">
+                Silicon Bridge Technologies carves your path towards modern IT
+                by empowering you to create a platform-centric architecture. Our
+                DevOps Automation Specialists allow easy managing of
+                cloud-native and traditional workloads while ensuring seamless
+                application development and delivery.
+              </p>
+              <p className="font-medium text-base pt-3">
+                Silicon Bridge Technologies doesn’t just bring a 360-degree
+                DevOps culture at first. We undertake a modular approach and
+                create a rational roadmap, underlining the organization’s unique
+                needs. Our DevOps Architects then gauge your organization’s
+                maturity levels at multiple fronts. Based on your existing IT
+                infrastructure strength, we leverage Infrastructure as Code
+                (IaC) to induce intelligent automation within your
+                infrastructure and ensure it adapts to heavy workloads at scale.
+                This ensures minimum vendor-lock ins.
+              </p>
+              <ul className="list-disc mt-5 space-y-2">
+                <li className="font-semibold text-sm">
+                  Building ecosystem around Docker containers using
+                  configuration management tools such as Ansible, Chef, Puppet
+                  etc.
+                </li>
+                <li className="font-semibold text-sm">
+                  Product development support for making service container ready
+                  with Microservice architecture.
+                </li>
+                <li className="font-semibold text-sm">
+                  Cloud Integration for containers and supplementary tool chain.
+                </li>
+                <li className="font-semibold text-sm">
+                  Develop ecosystem and workflows around EC2 Container service
+                  to allow seamless configuration and deployment of VMs
+                </li>
+                <li className="font-semibold text-sm">
+                  Orchestration using Apache Mesos to launch dynamic workloads
+                  onto a single cluster
+                </li>
+              </ul>
+            </div>
+            <div className="pl-5 pt-10 lg:pt-10">
+              <img src={devops} alt="" />
+            </div>
+          </div>
+        </div>
 
         {/* Virtualization */}
         <div className="bg-gray pl-10 pr-10 pb-10">
-          <h1 className="text-center font-bold text-3xl pt-10 text-[#18477E]">Virtualization</h1>
+          <h1 className="text-center font-bold text-3xl pt-10 text-[#18477E]">
+            Virtualization
+          </h1>
           <div className="w-full h-[2px] bg-[#18477E] mt-3"></div>
           <div className="flex flex-col lg:flex-row items-center justify-center">
-          <div className ="pl-5 pt-10 lg:pt-10 w-1/2">
-            <img src={VirtualizationImg} alt="" />
-          </div>
-          <div className="pt-10 w-full lg:w-1/2 md:pl-10">
-            <p className="font-medium text-sm">Silicon Bridge Technologies has gathered expertise in all areas of virtualization by executing multiple virtualization projects on different platforms like VMware and Microsoft Hyper-V. We have helped several ISVs in developing innovative solutions that take advantage of growing technologies and reducing costs without compromising on quality or efficiency. Our virtualization architects efficiently consolidate your networking, storage, and server infrastructure helping you handle dynamic workloads and save costs, concurrently. Our engineers help you integrate VMware, Citrix Xen, Hyper-V, and KVM to support their product features within these platforms. They further create a hassle-free infrastructure management environment by developing vCenter, SCVMM, VCO, XenCenter, and snapshot management plugins. We help you with the execution of VMware, WHQL/WLK, Citrix, and Linux certifications by setting up a certification environment.</p>
-            
-            <h1 className="font-semibold text-lg mt-5">Our focus areas include</h1>
-            <ul className="list-disc mt-2 space-y-2">
-              <li className="font-semibold text-sm">
-                Desktop virtualization
-              </li>
-              <li className="font-semibold text-sm">Server virtualization.</li>
-              <li className="font-semibold text-sm">Storage virtualization.</li>
-              <li className="font-semibold text-sm">Network virtualization</li>
-              <li className="font-semibold text-sm">Application virtualization</li>
-            </ul>
-          </div>
-          
+            <div className="pl-5 pt-10 lg:pt-10 w-1/2">
+              <img src={VirtualizationImg} alt="" />
+            </div>
+            <div className="pt-10 w-full lg:w-1/2 md:pl-10">
+              <p className="font-medium text-base">
+                Silicon Bridge Technologies has gathered expertise in all areas
+                of virtualization by executing multiple virtualization projects
+                on different platforms like VMware and Microsoft Hyper-V. We
+                have helped several ISVs in developing innovative solutions that
+                take advantage of growing technologies and reducing costs
+                without compromising on quality or efficiency. Our
+                virtualization architects efficiently consolidate your
+                networking, storage, and server infrastructure helping you
+                handle dynamic workloads and save costs, concurrently. Our
+                engineers help you integrate VMware, Citrix Xen, Hyper-V, and
+                KVM to support their product features within these platforms.
+                They further create a hassle-free infrastructure management
+                environment by developing vCenter, SCVMM, VCO, XenCenter, and
+                snapshot management plugins. We help you with the execution of
+                VMware, WHQL/WLK, Citrix, and Linux certifications by setting up
+                a certification environment.
+              </p>
+
+              <h1 className="font-semibold text-lg mt-5">
+                Our focus areas include
+              </h1>
+              <ul className="list-disc mt-2 space-y-2">
+                <li className="font-semibold text-sm">
+                  Desktop virtualization
+                </li>
+                <li className="font-semibold text-sm">
+                  Server virtualization.
+                </li>
+                <li className="font-semibold text-sm">
+                  Storage virtualization.
+                </li>
+                <li className="font-semibold text-sm">
+                  Network virtualization
+                </li>
+                <li className="font-semibold text-sm">
+                  Application virtualization
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

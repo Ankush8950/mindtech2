@@ -16,6 +16,9 @@ const Navbar = () => {
       </Link>
       <div className="hidden lg:flex">
         <ul className="menu menu-horizontal px-1 w-full">
+         <li>
+            <NavLink to="/" className="text-[#04789D] hover:text-[#04789D]">Home</NavLink>
+          </li>
           <li>
             <NavLink to="/about-us" className="text-[#04789D] hover:text-[#04789D]">About Us</NavLink>
           </li>

@@ -28,7 +28,7 @@ const Footer = () => {
             <a href="tel:1234567890" className="font-semibold text-base">1234567890</a>
             </div>
           </div>
-            <div className="sm:w-[300px] md:w-[300px] sm:pl-10 m-3">
+            <div className="sm:w-[200px] md:w-[300px] sm:pl-10 m-3">
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
                 Get to Know Us
               </h2>
@@ -65,7 +65,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="sm:w-[300px] md:w-[300px] m-3 sm:pl-10 ">
+            <div className="sm:w-[200px] md:w-[300px] m-3 sm:pl-10 ">
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
                 Connect with Us
               </h2>

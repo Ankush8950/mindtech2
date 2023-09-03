@@ -1,24 +1,32 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 
 const Form = ({ setToggle }) => {
-    const [formData, setFormData] = useState({
-      name: "",
-      company: "",
-      email: "",
-      phone: "",
-      country: ""
-    })
+  const [formData, setFormData] = useState({});
 
-    let name, value;
-    const handleForm = (event) => {
-      name = event.target.name;
-      value = event.target.value;
+  let name, value;
+  const handleForm = (event) => {
+    name = event.target.name;
+    value = event.target.value;
 
-      setFormData({...formData, [name]: value})
+    setFormData({ ...formData, [name]: value });
+  };
+  console.log(formData);
+
+  const onHandleSubmit = (e) => {
+    e.preventDefault();
+    const config = {
+      SecureToken: "b016d683-6c0c-4bae-b442-711f49e03188",
+      To: "info@siliconbridgetechnologies.com",
+      From: formData.email,
+      Subject: "information",
+      Body: `${formData.name}`,
+    };
+    if (window.Email) {
+      window.Email.send(config).then((res) => alert(res));
     }
-    console.log(formData)
-    
+  };
+
   return (
     <>
       <div className="w-10/12 sm:w-6/12 lg:w-4/12 bg-white p-3 relative rounded">
@@ -33,7 +41,7 @@ const Form = ({ setToggle }) => {
           download the selected document, please complete the form below.
         </h1>
         <div className=" bg-white flex items-center justify-center p-3  ">
-          <form className="w-full">
+          <form className="w-full" onSubmit={onHandleSubmit}>
             <div className="mb-1">
               <label
                 htmlFor="name"
@@ -42,13 +50,13 @@ const Form = ({ setToggle }) => {
                 Name
               </label>
               <input
-                type="name"
+                type="text"
                 id="name"
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="name"
                 required
                 name="name"
-                value={formData?.name}
+                value={formData.name}
                 onChange={handleForm}
               />
             </div>
@@ -60,12 +68,12 @@ const Form = ({ setToggle }) => {
                 Company
               </label>
               <input
-                type="Company"
+                type="text"
                 id="Company"
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 required
                 name="company"
-                value={formData?.company}
+                value={formData.company}
                 onChange={handleForm}
               />
             </div>
@@ -77,12 +85,12 @@ const Form = ({ setToggle }) => {
                 Company Email
               </label>
               <input
-                type="Company email"
+                type="email"
                 id="Company Email"
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 required
                 name="email"
-                value={formData?.email}
+                value={formData.email}
                 onChange={handleForm}
               />
             </div>
@@ -99,7 +107,7 @@ const Form = ({ setToggle }) => {
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 required
                 name="phone"
-                value={formData?.phone}
+                value={formData.phone}
                 onChange={handleForm}
               />
             </div>
@@ -116,7 +124,7 @@ const Form = ({ setToggle }) => {
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 required
                 name="country"
-                value={formData?.country}
+                value={formData.country}
                 onChange={handleForm}
               />
             </div>

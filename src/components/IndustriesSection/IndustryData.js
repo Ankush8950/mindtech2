@@ -1,4 +1,4 @@
-import widgetImage1 from "../Image/wedget-image1.jpg"
+import widgetImage1 from "../Image/automation-solution.jpg"
 import widgetImage2 from "../Image/widget-image2.jpg"
 import widgetImage3 from "../Image/image_devops.jpg"
 import widgetImage4 from "../Image/widget-image7.jpg"
@@ -7,11 +7,11 @@ import widgetImage6 from "../Image/widget-image6.jpg"
 
 
 const IndustryData = [
-    // {
-    //     IndustryImage: widgetImage1 ,
-    //     IndustryBottomColor: "#341948",
-    //     IndustryPara: "Remote Patient Monitoring Device Enhancements",
-    // },
+    {
+        IndustryImage: widgetImage1 ,
+        IndustryBottomColor: "#341948",
+        IndustryPara: "Overcome Infrastructure Complexities with a Mindful Automation Approach",
+    },
     {
         IndustryImage: widgetImage2,
         IndustryBottomColor: "#0b3978",
