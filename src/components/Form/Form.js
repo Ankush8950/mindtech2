@@ -17,13 +17,13 @@ const Form = ({ setToggle }) => {
     e.preventDefault();
     const config = {
       SecureToken: "b016d683-6c0c-4bae-b442-711f49e03188",
-      To: "info@siliconbridgetechnologies.com",
-      From: formData.email,
+      To: "nimishkumar9534@gmail.com",
+      From: "info@siliconbridgetechnologies.com",
       Subject: "information",
       Body: `${formData.name}`,
     };
     if (window.Email) {
-      window.Email.send(config).then((res) => alert(res));
+      window.Email.send(config).then((res) => console.log(res));
     }
   };
 

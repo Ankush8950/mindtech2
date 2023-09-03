@@ -157,7 +157,7 @@ const Contact = () => {
       <div className="pl-5 md:pl-10 pr-5 md:pr-10">
         <div className="mapouter">
           <div className="gmap_canvas">
-           <iframe className="h-[300px] md:h-[400px]" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31111.890015028297!2d77.60248142249839!3d12.908605025148217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1ssilicon%20bridge%20technologies%20%2C%202nd%20floor%20%2C%204th%20cross%20%2C%207th%20main%20%2C%20NKR%20Park%2C%20Hosur%20road%20%2C%20muniyappa%20layout%2C%20Garvebhavipalya%2C%20bengaluru%20%2C%20karnataka%2C%20560068!5e0!3m2!1sen!2sin!4v1693759779915!5m2!1sen!2sin" width="100%"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           <iframe className="h-[300px] md:h-[400px]" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31111.890015028297!2d77.60248142249839!3d12.908605025148217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1ssilicon%20bridge%20technologies%20%2C%202nd%20floor%20%2C%204th%20cross%20%2C%207th%20main%20%2C%20NKR%20Park%2C%20Hosur%20road%20%2C%20muniyappa%20layout%2C%20Garvebhavipalya%2C%20bengaluru%20%2C%20karnataka%2C%20560068!5e0!3m2!1sen!2sin!4v1693759779915!5m2!1sen!2sin" width="100%"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="map"></iframe>
           </div>
         </div>
       </div>
