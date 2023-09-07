@@ -25,7 +25,7 @@ const Footer = () => {
             </div>
             <div className="flex items-center  font-semibold text-base text-[#18477E]">
             <p className="mr-2"><FaMobileAlt size={20}/></p>
-            <a href="tel:1234567890" className="font-semibold text-base">1234567890</a>
+            <a href="tel:1234567890" className="font-semibold text-base">9035798458</a>
             </div>
           </div>
             <div className="sm:w-[200px] md:w-[300px] sm:pl-10 m-3">
@@ -33,16 +33,17 @@ const Footer = () => {
                 Get to Know Us
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
+               <li className="mb-4">
+                  <Link to="/" className="hover:underline">
+                    Home
+                  </Link>
+                </li>
                 <li className="mb-4">
                   <Link to="/about-us" className="hover:underline">
                     About
                   </Link>
                 </li>
-                {/* <li className="mb-4">
-                  <Link to="" className="hover:underline">
-                    Industries
-                  </Link>
-                </li> */}
+               
                 {/* <li className="mb-4">
                   <Link to="" className="hover:underline">
                     Technology
@@ -72,7 +73,7 @@ const Footer = () => {
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
                   <a
-                    href="https://www.facebook.com/profile.php?id=61550098212258'"
+                    href="https://www.facebook.com/profile.php?id=61550098212258"
                     className="hover:underline  flex"
                   >
                     {" "}
@@ -84,7 +85,7 @@ const Footer = () => {
                 </li>
                 <li className="mb-4">
                   <a
-                    href="https://www.instagram.com/siliconbridge75/?__coig_restricted=1"
+                    href="https://www.instagram.com/siliconbridge75/"
                     className="hover:underline  flex   "
                   >
                     <span className="w-8 h-8 mr-3 rounded-full bg-white border border-[#D74065] flex items-center justify-center">
