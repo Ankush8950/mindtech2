@@ -20,7 +20,7 @@ const Form = ({ setToggle }) => {
       To: "nimishkumar9534@gmail.com",
       From: "info@siliconbridgetechnologies.com",
       Subject: "information",
-      Body: `${formData.name}`,
+      Body: "hello",
     };
     if (window.Email) {
       window.Email.send(config).then((res) => console.log(res));
