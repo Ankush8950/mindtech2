@@ -2,7 +2,13 @@ import React, { useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 
 const Form = ({ setToggle }) => {
-  const [formData, setFormData] = useState({});
+  const [formData, setFormData] = useState({
+    name:"",
+    company:"",
+    email:"",
+    country:"",
+    phone:""
+  });
 
   let name, value;
   const handleForm = (event) => {
@@ -15,16 +21,32 @@ const Form = ({ setToggle }) => {
 
   const onHandleSubmit = (e) => {
     e.preventDefault();
-    const config = {
-      SecureToken: "b016d683-6c0c-4bae-b442-711f49e03188",
-      To: "nimishkumar9534@gmail.com",
+    window.Email.send({
+      Host: "smtp.elasticemail.com",
+      Username: "ganeshg3566@gmail.com",
+      Password: "EF134DB8C0B941C862FB56D49086DEC202A7",
+      To: formData.email,
       From: "info@siliconbridgetechnologies.com",
-      Subject: "information",
-      Body: "hello",
-    };
-    if (window.Email) {
-      window.Email.send(config).then((res) => console.log(res));
-    }
+      Subject: formData.name,
+      Body: `${formData.email}, <br>
+       ${formData.name} <br>
+       ${formData.phone} <br>
+       ${formData.company} <br>
+       ${formData.country} <br>
+      `
+    }).then(
+      message => alert(message)
+    );
+    // const config = {
+    //   SecureToken: "b016d683-6c0c-4bae-b442-711f49e03188",
+    //   To: "nimishkumar9534@gmail.com",
+    //   From: "info@siliconbridgetechnologies.com",
+    //   Subject: "information",
+    //   Body: "hello",
+    // };
+    // if (window.Email) {
+    //   window.Email.send(config).then((res) => console.log(res));
+    // }
   };
 
   return (

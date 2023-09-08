@@ -1,6 +1,8 @@
 import React from "react";
 import IotImg from "../Image/IoT.jpeg"
 import IotImg1 from "../Image/iot2-removebg-preview.png"
+import IotData from "./IotCardData";
+import IotCart from "./IotCart";
 
 
 const Iot = () => {
@@ -33,6 +35,19 @@ const Iot = () => {
       </div>
       <div className="md:w-6/12 md:h-4/6">
         <img className="w-full h-full mb-10 md:mb-0" src={IotImg1} alt="" />
+      </div>
+      </div>
+
+<div className="mt-10 pl-10 pr-10 ">
+    <h1 className="font-bold text-4xl">IoT development services we provide</h1>
+      <div className="flex flex-wrap items-center justify-between mt-5">
+        {
+          IotData.map((item)=>{
+            return(
+             <IotCart item={item}  />
+            )
+          })
+        }
       </div>
       </div>
       </div>

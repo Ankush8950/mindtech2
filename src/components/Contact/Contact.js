@@ -23,7 +23,22 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(data);
+        window.Email.send({
+          Host: "smtp.elasticemail.com",
+          Username: "ganeshg3566@gmail.com",
+          Password: "EF134DB8C0B941C862FB56D49086DEC202A7",
+          To: data.email,
+          From: "info@siliconbridgetechnologies.com",
+          Subject: data.name,
+          Body: `${data.email}, <br>
+       ${data.name} <br>
+       ${data.subject} <br>
+       ${data.message} <br>
+      
+      `
+        }).then(
+          message => alert(message)
+        );
   };
 
   return (

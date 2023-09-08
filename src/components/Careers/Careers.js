@@ -5,8 +5,8 @@ import CarrerImg from "../Image/careers.jpg"
 const Careers = () => {
   return (
     <div>
-      <div className='w-full h-[350px] opacity-75' style={{backgroundImage:`url(${CarrerImg})`,backgroundPosition:"center",backgroundSize:"cover"}} >
-        
+      <div className='w-full lg:h-[400px] opacity-75' >
+        <img src={CarrerImg} alt="" />
       </div>
       <div>
         <JoinUs />

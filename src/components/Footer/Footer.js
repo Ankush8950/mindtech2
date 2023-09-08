@@ -54,11 +54,11 @@ const Footer = () => {
                     Services
                   </Link>
                 </li>
-                  {/* <li className="mb-4">
-                  <Link to="/app-development" className="hover:underline">
+                  <li className="mb-4">
+                  <Link to="/careers" className="hover:underline">
                     Careers
                   </Link>
-                </li> */}
+                </li>
                   <li className="mb-4">
                   <Link to="/contact" className="hover:underline">
                     Contact Us
