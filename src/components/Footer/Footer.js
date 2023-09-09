@@ -14,7 +14,7 @@ const Footer = () => {
   const year = date.getFullYear()
   return (
     <footer className="bg-white dark:bg-gray-900 font-roboto shadow-2xl pl-5 sm:pl-0 pr-5 sm:pr-0">
-      <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+      <div className="mx-auto w-full max-w-screen-xl">
         <div className="flex flex-wrap justify-between pr-10">
           <div className="mb-6 md:mb-0  md:pl-10 space-y-3 w-[400px]">
             <img className="ml-[-30px] mt-[-30px]" src={Logo} alt="" />
@@ -141,8 +141,8 @@ const Footer = () => {
               </ul>
             </div> */}
         </div>
-        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <div className="flex items-center justify-center ">
+        {/* <hr className="border-gray-200 sm:mx-auto dark:border-gray-700 mt-10" /> */}
+        <div className="flex items-center justify-around bg-[#dadada] h-20 mt-10">
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © {year}
             <a href="href='https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md'" className="hover:underline ml-2">
@@ -150,7 +150,10 @@ const Footer = () => {
             </a>
             . All Rights Reserved.
           </span>
-         
+         <span className="end-2 font-medium text-sm ">
+         <span className="font-medium text-base"> developed by :</span>
+          <a className="ml-2 text-[#18477E]" href="https://iontechnolabs.com/">ION TECHNOLABS</a>
+         </span> 
         </div>
       </div>
     </footer>
