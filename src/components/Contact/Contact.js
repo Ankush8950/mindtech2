@@ -14,7 +14,6 @@ const Contact = () => {
     subject: "",
     message: "",
   });
-  console.log("Hello", data);
   const onHandleChange = (e) => {
     const formData = { ...data };
     formData[e.target.name] = e.target.value;
@@ -25,14 +24,28 @@ const Contact = () => {
     e.preventDefault();
        window.Email.send({
          Host: "smtp.elasticemail.com",
-         Username: "ganeshg3566@gmail.com",
-         Password: "EF134DB8C0B941C862FB56D49086DEC202A7",
+         Username: "info@siliconbridgetechnologies.com",
+         Password: "4DD9328E932FBF8406FA55E1F44B1351D532",
+         Port: 2525,
          To: "info@siliconbridgetechnologies.com",
-         From: `${data.email}`,
-         Subject: "subject",
-         Body: `Hello there`
+         From: "info@siliconbridgetechnologies.com",
+         Subject: `${data.name}`,
+         Body: `<div className="bg-[#04789D]">
+      <p className="font-bold text-base text-[#04789D]">${data.name}</p> <br>
+      <p className="font-medium text-base text-[#04789D]">${data.email}</p> <br>
+      <p className="font-medium text-base text-[#04789D]"> ${data.subject}</p> <br>
+      <p className="font-medium text-base text-[#04789D]">${data.message}</p> <br>
+     
+      </div>
+      `
        }).then(
-         message => alert(message)
+         message => {
+           if (message == "OK") {
+             alert("message has been send, thank you for connecting")
+           } else {
+             alert("there is some error")
+           }
+         }
        );
   };
 

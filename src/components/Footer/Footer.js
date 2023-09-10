@@ -7,6 +7,7 @@ import {AiOutlineMail} from "react-icons/ai";
 import {GoLocation} from "react-icons/go";
 import Logo from "../Image/logo.jpg";
 import { Link } from "react-router-dom";
+import iso from "../Image/iso silicon.png"
 
 
 const Footer = () => {
@@ -26,6 +27,9 @@ const Footer = () => {
             <div className="flex items-center  font-semibold text-base text-[#18477E]">
             <p className="mr-2"><FaMobileAlt size={20}/></p>
             <a href="tel:1234567890" className="font-semibold text-base">9035798458</a>
+            </div>
+            <div className="flex justify-start">
+              <img className="w-[100px] ml-5 mt-3" src={iso} alt="" />
             </div>
           </div>
             <div className="sm:w-[200px] md:w-[300px] sm:pl-10 m-3">

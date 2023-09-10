@@ -23,14 +23,30 @@ const Form = ({ setToggle }) => {
     e.preventDefault();
     window.Email.send({
       Host: "smtp.elasticemail.com",
-      Username: "ganeshg3566@gmail.com",
-      Password: "EF134DB8C0B941C862FB56D49086DEC202A7",
-      To: "info@siliconbridgetechnologies.com",
-      From: "ganeshg3566@gmail.com",
-      Subject: "subject",
-      Body: `Hello`
+      Username: "info@siliconbridgetechnologies.com",
+      Password: "4DD9328E932FBF8406FA55E1F44B1351D532",
+      Port: 2525,
+      To: `${formData.email}`,
+      From:"info@siliconbridgetechnologies.com",
+      Subject: `${formData.name}`,
+      Body: `<div className="bg-[#04789D]">
+      <h1 className="font-bold text-base text-[#04789D]">${formData.name}</h1> <br>
+      <div className="flex items-center justify-center"><p className=""font-normal text-sm>Name</p> : <p className="ml-1 font-medium text-sm text-[#04789D]">${formData.email}</p></div> <br>
+      <div className="flex items-center justify-center"><p className=""font-normal text-sm>Company</p> : <p className="ml-1 font-medium text-sm text-[#04789D]">${formData.company}</p></div> 
+      <div className="flex items-center justify-center"><p className=""font-normal text-sm>Phone</p> : <p className="ml-1 font-medium text-sm text-[#04789D]">${formData.phone}</p></div> 
+      <div className="flex items-center justify-center"><p className=""font-normal text-sm>Country</p> : <p className="ml-1 font-medium text-sm text-[#04789D]">${formData.country}</p></div> 
+     
+     
+      </div>
+      `
     }).then(
-      message => alert(message)
+      message =>{
+        if(message == "OK"){
+          alert("message has been send, thank you for connecting")
+        }else{
+          alert("there is some error")
+        }
+      }
     );
     // const config = {
     //   SecureToken: "b016d683-6c0c-4bae-b442-711f49e03188",
