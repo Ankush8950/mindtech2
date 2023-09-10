@@ -14,7 +14,7 @@ const Contact = () => {
     subject: "",
     message: "",
   });
-  console.log(data);
+  console.log("Hello", data);
   const onHandleChange = (e) => {
     const formData = { ...data };
     formData[e.target.name] = e.target.value;
@@ -23,22 +23,17 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-        window.Email.send({
-          Host: "smtp.elasticemail.com",
-          Username: "ganeshg3566@gmail.com",
-          Password: "EF134DB8C0B941C862FB56D49086DEC202A7",
-          To: data.email,
-          From: "info@siliconbridgetechnologies.com",
-          Subject: data.name,
-          Body: `${data.email}, <br>
-       ${data.name} <br>
-       ${data.subject} <br>
-       ${data.message} <br>
-      
-      `
-        }).then(
-          message => alert(message)
-        );
+       window.Email.send({
+         Host: "smtp.elasticemail.com",
+         Username: "ganeshg3566@gmail.com",
+         Password: "EF134DB8C0B941C862FB56D49086DEC202A7",
+         To: "info@siliconbridgetechnologies.com",
+         From: `${data.email}`,
+         Subject: "subject",
+         Body: `Hello there`
+       }).then(
+         message => alert(message)
+       );
   };
 
   return (
@@ -97,7 +92,7 @@ const Contact = () => {
               </label>
               <input
                 type="name"
-                id="email"
+                id="name"
                 name="name"
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="name"
