@@ -150,8 +150,8 @@ const Footer = () => {
             </a>
             . All Rights Reserved.
           </span>
-         <span className="end-2 font-medium text-sm ">
-         <span className="font-medium text-base"> developed by :</span>
+         <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+         <span className="font-medium text-sm"> developed by :</span>
           <a className="ml-2 text-[#18477E]" href="https://iontechnolabs.com/">ION TECHNOLABS</a>
          </span> 
         </div>

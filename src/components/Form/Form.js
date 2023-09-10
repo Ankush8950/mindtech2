@@ -25,15 +25,10 @@ const Form = ({ setToggle }) => {
       Host: "smtp.elasticemail.com",
       Username: "ganeshg3566@gmail.com",
       Password: "EF134DB8C0B941C862FB56D49086DEC202A7",
-      To: formData.email,
-      From: "info@siliconbridgetechnologies.com",
-      Subject: formData.name,
-      Body: `${formData.email}, <br>
-       ${formData.name} <br>
-       ${formData.phone} <br>
-       ${formData.company} <br>
-       ${formData.country} <br>
-      `
+      To: "info@siliconbridgetechnologies.com",
+      From: "ganeshg3566@gmail.com",
+      Subject: "subject",
+      Body: `Hello`
     }).then(
       message => alert(message)
     );
