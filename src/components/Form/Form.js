@@ -26,15 +26,15 @@ const Form = ({ setToggle }) => {
       Username: "info@siliconbridgetechnologies.com",
       Password: "4DD9328E932FBF8406FA55E1F44B1351D532",
       Port: 2525,
-      To: `${formData.email}`,
-      From:"info@siliconbridgetechnologies.com",
+      To: "info@siliconbridgetechnologies.com",
+      From: "info@siliconbridgetechnologies.com",
       Subject: `${formData.name}`,
       Body: `<div className="bg-[#04789D]">
-      <h1 className="font-bold text-base text-[#04789D]">${formData.name}</h1> <br>
-      <div className="flex items-center justify-center"><p className=""font-normal text-sm>Name</p> : <p className="ml-1 font-medium text-sm text-[#04789D]">${formData.email}</p></div> <br>
-      <div className="flex items-center justify-center"><p className=""font-normal text-sm>Company</p> : <p className="ml-1 font-medium text-sm text-[#04789D]">${formData.company}</p></div> 
-      <div className="flex items-center justify-center"><p className=""font-normal text-sm>Phone</p> : <p className="ml-1 font-medium text-sm text-[#04789D]">${formData.phone}</p></div> 
-      <div className="flex items-center justify-center"><p className=""font-normal text-sm>Country</p> : <p className="ml-1 font-medium text-sm text-[#04789D]">${formData.country}</p></div> 
+      <h1 className="font-bold text-base text-[#04789D]">Name : ${formData.name}</h1> <br>
+      <div className="flex items-center justify-center"><p className="ml-1 font-medium text-sm text-[#04789D]">Email : ${formData.email}</p></div> <br>
+      <div className="flex items-center justify-center"><p className="ml-1 font-medium text-sm text-[#04789D]">company : ${formData.company}</p></div> 
+      <div className="flex items-center justify-center"><p className="ml-1 font-medium text-sm text-[#04789D]">phone :  ${formData.phone}</p></div> 
+      <div className="flex items-center justify-center"><p className="ml-1 font-medium text-sm text-[#04789D]">country : ${formData.country}</p></div> 
      
      
       </div>

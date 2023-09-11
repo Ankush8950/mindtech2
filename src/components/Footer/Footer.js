@@ -146,15 +146,15 @@ const Footer = () => {
             </div> */}
         </div>
         {/* <hr className="border-gray-200 sm:mx-auto dark:border-gray-700 mt-10" /> */}
-        <div className="flex items-center justify-around bg-[#dadada] h-20 mt-10">
-          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+        <div className="flex flex-col md:flex-row items-center justify-around bg-[#dadada] h-20 mt-10">
+          <span className="text-sm text-gray-500 text-center dark:text-gray-400">
             © {year}
             <a href="href='https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md'" className="hover:underline ml-2">
               Siliconbridgetechnologies
             </a>
             . All Rights Reserved.
           </span>
-         <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+         <span className="text-sm text-gray-500 text-center dark:text-gray-400">
          <span className="font-medium text-sm"> developed by :</span>
           <a className="ml-2 text-[#18477E]" href="https://iontechnolabs.com/">ION TECHNOLABS</a>
          </span> 

@@ -85,7 +85,7 @@ const Navbar = () => {
               </ul>
             {/* </li> */} 
             <li>
-            <NavLink to="/services" className="text-[#04789D] hover:text-[#04789D]">Service</NavLink>
+            <NavLink to="/services" className="text-[#04789D] hover:text-[#04789D]">Services</NavLink>
           </li>
          
           <li>

@@ -31,10 +31,10 @@ const Contact = () => {
          From: "info@siliconbridgetechnologies.com",
          Subject: `${data.name}`,
          Body: `<div className="bg-[#04789D]">
-      <p className="font-bold text-base text-[#04789D]">${data.name}</p> <br>
-      <p className="font-medium text-base text-[#04789D]">${data.email}</p> <br>
-      <p className="font-medium text-base text-[#04789D]"> ${data.subject}</p> <br>
-      <p className="font-medium text-base text-[#04789D]">${data.message}</p> <br>
+      <p className="font-bold text-base text-[#04789D]">Name : ${data.name}</p> <br>
+      <p className="font-medium text-base text-[#04789D]">Email : ${data.email}</p> <br>
+      <p className="font-medium text-base text-[#04789D]">Subject : ${data.subject}</p> <br>
+      <p className="font-medium text-base text-[#04789D]">Message : ${data.message}</p> <br>
      
       </div>
       `
