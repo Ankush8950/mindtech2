@@ -80,13 +80,13 @@ const Contact = () => {
             </div>
             <div className="flex pt-2">
               <MdEmail size={20} color="#04789D" />
-              <p className="font-normal text-base capitalize ml-2">
+              <a href="mailto:info@siliconbridgetechnologies.com" className="font-normal text-base capitalize ml-2">
                 info@siliconbridgetechnologies.com
-              </p>
+              </a>
             </div>
             <div className="flex pt-2 ">
               <BiPhoneCall size={20} color="#04789D" />
-              <p className="font-normal text-base capitalize ml-2">123456789</p>
+              <a href="tel:9035789458" className="font-normal text-base capitalize ml-2">9035789458</a>
             </div>
             {/* <div className="flex pt-2 ">
               <BiPhoneCall size={20} color="#04789D" />
