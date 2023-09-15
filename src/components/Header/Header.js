@@ -46,7 +46,7 @@ const Header = () => {
       </div>
 
       <div className="fixed bottom-10 right-10 z-20 bg-[#44C054] p-2 rounded">
-        <a href="https://wa.me/9035798458">
+        <a href="https://wa.me/9035789458">
           <BsWhatsapp size={40} color="white" />
         </a>
       </div>
