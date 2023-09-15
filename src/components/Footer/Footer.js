@@ -8,6 +8,7 @@ import {GoLocation} from "react-icons/go";
 import Logo from "../Image/logo.jpg";
 import { Link } from "react-router-dom";
 import iso from "../Image/iso silicon.png"
+import {TbDeviceLandlinePhone} from "react-icons/tb"
 
 
 const Footer = () => {
@@ -27,6 +28,10 @@ const Footer = () => {
             <div className="flex items-center  font-semibold text-base text-[#18477E]">
             <p className="mr-2"><FaMobileAlt size={20}/></p>
             <a href="tel:1234567890" className="font-semibold text-base">9035789458</a>
+            </div>
+            <div className="flex items-center  font-semibold text-base text-[#18477E]">
+            <p className="mr-2"><TbDeviceLandlinePhone size={20}/></p>
+            <a href="tel:1234567890" className="font-semibold text-base">8048908724</a>
             </div>
             <div className="flex justify-start">
               <img className="w-[100px] ml-5 mt-3" src={iso} alt="" />
